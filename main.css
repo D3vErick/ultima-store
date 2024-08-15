@@ -1,0 +1,159 @@
+*{ /*Reset do css*/
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+body{
+    background-color: #eaebff;
+}
+
+.container{
+    width: 1024px;
+    margin: 0 auto;
+}
+
+header .container{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header{ 
+    padding: 16px 5px;
+    border-bottom: 1px solid #ccc;
+    background-color: #fad2fa;
+    margin-bottom: 56px;
+}
+
+header input{ 
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+header button{
+    padding: 8px;
+    border: none;
+    background-color: #a2a4fc;
+    cursor: pointer;
+}
+
+header button:hover{
+    background-color: #d2d3fa;
+}
+
+
+.container-flex{
+    display: flex;
+}
+
+.sobreLoja img{
+    height: 300px;
+    border: 4px solid #fad2fa;
+    margin: 8px;
+}
+
+.sobreLoja p{
+    font-size: 24px;
+    max-width: 500px;
+}
+
+.sobreLoja h2{
+    color: #7c667c;
+}
+
+.sobreLoja hr{
+    background-color: #7c667c;
+    height: 6px;
+    margin: 0;
+}
+
+.recomendadosSemana h2, hr{
+    margin-bottom: 16px;
+    color: #7c667c;
+    margin: 0 0 0 16px ;
+}
+
+.produtos{
+    display: grid;
+    grid-template-columns: repeat(4, 24.5%);
+    column-gap: 0.3%;
+    row-gap: 3%; 
+    list-style: none;
+}
+
+.produto{
+    max-width: 300px;
+    width: 100%;
+    border: 4px solid #fad2fa;
+    border-radius: 16px;
+    padding: 12px;
+    margin: 16px;
+    background-color: #fff;
+}
+
+.produto button{
+    padding: 16px;
+    border: none;
+    background-color: #a2a4fc;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.produto button:hover{
+    background-color: #d2d3fa;
+}
+
+.recomendadosSemana article img{
+    width: 100%;
+}
+
+footer{
+    padding: 16px;
+    background-color: #fad2fa;
+}
+
+footer p{
+    font-weight: bold;
+    padding-left: 80px;
+}
+
+@media screen and (max-width: 640px){
+    .container{
+        width: 100%;
+    }
+    
+    .produtos{
+        display: block;
+    }
+
+    .container-flex{
+        display: block;
+    }
+
+    .sobreLoja img{
+        height: 200px;
+        border: 4px solid #fad2fa;
+        margin: 8px;
+    }
+    
+    .sobreLoja p{
+        font-size: 24px;
+        max-width: 400px;
+        margin-bottom: 12px;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px){
+    .container{
+        max-width: 90%;
+    }
+
+    .produtos{
+        grid-template-columns: repeat(2, 49%);
+        margin-bottom: 24px;
+    }
+}
